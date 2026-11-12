@@ -1,0 +1,30 @@
+:root{--ink:#fff;--bg:#0b0b0b;--grey:#9a9a9a;--line:#2a2a2a}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Josefin Sans",sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;font-size:1.1rem;font-weight:300}
+h2{font-family:"Sacramento",cursive;font-weight:400;font-size:clamp(2.8rem,7vw,4.4rem);line-height:1.1;margin:0 0 .3em}
+h3{font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:1.05rem;margin:0}
+a{color:#fff}
+.top{display:flex;align-items:center;gap:1.5rem;padding:.6rem 1.4rem;background:rgba(11,11,11,.95);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.mark{font-family:"Sacramento",cursive;font-size:2.2rem;text-decoration:none;line-height:1}
+.top nav{margin-left:auto;display:flex;gap:1.8rem}.top nav a{text-decoration:none;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem;font-weight:400}
+.call{border:1px solid #fff;text-decoration:none;padding:.45rem 1rem;letter-spacing:.1em;font-size:.85rem;text-transform:uppercase;white-space:nowrap}
+.hero{display:flex;justify-content:center;background:#000}
+.hero img{width:100%;max-width:640px;display:block}
+.wrap{max-width:900px;margin:0 auto;padding:4.5rem 1.4rem}
+.center{text-align:center}
+.lead{max-width:640px;margin:0 auto 1.2rem;font-size:1.25rem}
+.addr{letter-spacing:.2em;text-transform:uppercase;font-size:.85rem;color:var(--grey)}
+.band{background:#141414;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin:2.2rem 0}
+.trio div{border:1px solid #fff;padding:2.2rem 1rem}
+.also{color:var(--grey)}
+.actions{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;margin-top:2rem}
+.btn{display:inline-block;background:#fff;color:#000;padding:.8rem 1.6rem;text-decoration:none;letter-spacing:.1em;text-transform:uppercase;font-size:.85rem;font-weight:600}
+.btn.ghost{background:transparent;color:#fff;border:1px solid #fff}
+footer{text-align:center;padding:1.5rem 1rem 5rem}
+.credit{font-size:.78rem;margin:0}.credit a{color:#777}
+.fab{display:none}
+@media(max-width:760px){
+.top nav,.call{display:none}.top{justify-content:center}
+.trio{grid-template-columns:1fr}
+.fab{display:block;position:fixed;right:1rem;bottom:1rem;background:#fff;color:#000;text-decoration:none;font-weight:600;padding:.9rem 1.5rem;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.5);z-index:9}}
